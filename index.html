@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IT Hub Canberra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body { padding-top: 60px; }
+    .service-icon { font-size: 40px; color: #0d6efd; }
+    .footer { background-color: #f8f9fa; padding: 20px 0; }
+  </style>
+</head>
+<body>
+
+<form action="https://formspree.io/f/xwpoaago" method="POST">
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><i class="fa-solid fa-network-wired me-2"></i>IT Hub Canberra</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#" class="nav-link active"><i class="fa fa-home"></i> Home</a></li>
+        <li class="nav-item"><a href="about.php" class="nav-link"><i class="fa fa-info-circle"></i> About Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1>Effective Business Performance</h1>
+    <p class="lead">Your Trusted Partner in IT Services.</p>
+  </div>
+</header>
+
+<section class="py-5">
+  <div class="container text-center">
+    <h2>Welcome to IT HUB Canberra</h2>
+    <p class="lead">
+      Explore our wide range of professional IT services tailored to meet your business and educational needs.
+    </p>
+    <p>
+      IT Hub Canberra Pty Ltd. was established in 2016 with the following goals:
+    </p>
+    <ul class="text-start mx-auto" style="max-width: 700px;">
+      <li>Education and hands-on lab training on various vendor-oriented Professional Certifications</li>
+      <li>Systems, Networking & Integration and consultation for SMEs</li>
+      <li>Web Development</li>
+      <li>IT Infrastructure Monitoring & Support for SMEs</li>
+      <li>Helping local communities with job-oriented training programs, offering job opportunities with our clients where possible.</li>
+      <li>Job-guaranteed programs (with conditions for enrollment).</li>
+    </ul>
+    <a href="about.php" class="btn btn-outline-primary mt-3"><i class="fa fa-arrow-right"></i> Read More</a>
+  </div>
+</section>
+
+<section class="bg-light py-5">
+  <div class="container">
+    <h3 class="text-center mb-4">Our Services</h3>
+    <div class="row g-4">
+      <!-- Repeat the following card structure for each service -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-network-wired service-icon mb-3"></i>
+            <h5 class="card-title">Network Services</h5>
+            <p class="card-text">Comprehensive network solutions with LAN/WAN, firewall, and load balancing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-desktop service-icon mb-3"></i>
+            <h5 class="card-title">System Solutions</h5>
+            <p class="card-text">Includes Skype for Business, Exchange 2016 Migration, and Windows solutions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-graduation-cap service-icon mb-3"></i>
+            <h5 class="card-title">Training</h5>
+            <p class="card-text">Certifications and job-oriented training in Cisco, Microsoft, and more.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more cards similarly -->
+    </div>
+  </div>
+</section>
+
+<section class="py-5 text-center bg-white">
+  <div class="container">
+    <h3>Start Improving Your Business Right Now!</h3>
+    <p>And have peace of mind</p>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+      <i class="fa fa-calendar-check"></i> Book an Appointment
+    </button>
+  </div>
+</section>
+
+<!-- Appointment Modal -->
+<div class="modal fade" id="appointmentModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Book Appointment</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <label>Select a Date:</label>
+        <input type="date" class="form-control" value="<?= date('Y-m-d'); ?>">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer text-center">
+  <div class="container">
+    <p><strong>Address:</strong> Level 10-11, No. 66, Clarence Street, Sydney, NSW 2000, Australia</p>
+    <p><strong>Phones:</strong> (061) 0292480113</p>
+    <p><strong>Email:</strong> info@cislab.com.au</p>
+    <hr>
+    <p>
+      <i class="fa fa-map-marker-alt"></i> NSW: Level 10-11, No. 66, Clarence Street, Sydney, NSW<br>
+      <i class="fa fa-phone"></i> NSW: (061) 0292 480 113<br>
+      <i class="fa fa-map-marker-alt"></i> WA: AMP Tower Level 28, 140 St George's Trace, Perth WA<br>
+      <i class="fa fa-phone"></i> WA: (061) 0892 881 877<br>
+      <i class="fa fa-map-marker-alt"></i> ACT: 113/90 Swain Street, Gungahlin ACT<br>
+      <i class="fa fa-phone"></i> ACT: (061) 0292 480 113<br>
+      <i class="fa fa-map-marker-alt"></i> SA: Westpac House Level 24, King William Street Adelaide SA 5000
+    </p>
+    <p><i class="fa fa-clock"></i> Mon–Fri: 9.00 am–4.30 pm</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</form>
+</body>
+</html>
